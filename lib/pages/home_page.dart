@@ -1,4 +1,5 @@
 import 'package:doctor_app/widgets/health_needs.dart';
+import 'package:doctor_app/widgets/nearby_doctors.dart';
 import 'package:doctor_app/widgets/upcoming_card.dart';
 import 'package:flutter/material.dart';
 
@@ -40,15 +41,22 @@ class _HomePageState extends State<HomePage> {
         children: [
           // upcoming card
           const UpcomingCard(),
+          // health card
           const SizedBox(height: 20),
           Text(
             "Health Needs",
             style: Theme.of(context).textTheme.headlineSmall,
           ),
           const SizedBox(height: 15),
-          // health card
-          const HealthNeeds()
+          const HealthNeeds(),
           // nearby card
+          const SizedBox(height: 20),
+          Text(
+            "Nearby Doctors",
+            style: Theme.of(context).textTheme.headlineSmall,
+          ),
+          const SizedBox(height: 15),
+          const NearbyDoctors()
 
         ],
       ),
