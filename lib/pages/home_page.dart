@@ -1,5 +1,6 @@
-import 'package:flutter/material.dart';
+import 'package:doctor_app/widgets/health_needs.dart';
 import 'package:doctor_app/widgets/upcoming_card.dart';
+import 'package:flutter/material.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -36,11 +37,17 @@ class _HomePageState extends State<HomePage> {
       ),
       body: ListView(
         padding: const EdgeInsets.all(14),
-        children: const [
+        children: [
           // upcoming card
-          UpcomingCard()
+          const UpcomingCard(),
+          const SizedBox(height: 20),
+          Text(
+            "Health Needs",
+            style: Theme.of(context).textTheme.headlineSmall,
+          ),
+          const SizedBox(height: 15),
           // health card
-
+          const HealthNeeds()
           // nearby card
 
         ],
