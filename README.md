@@ -1,6 +1,6 @@
 # doctor_app
 
-A new Flutter project.
+A Doctor Appointment App.
 
 ## Getting Started
 
