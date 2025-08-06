@@ -19,20 +19,20 @@ List<DoctorModel> nearbyDoctors = [
     position: "General Practitioner", 
     averageReview: 4, 
     totalReview: 210, 
-    profile: 'doctor_1.jpg',
+    profile: 'assets/doctor_1.jpg',
   ),
   DoctorModel(
     name: "Sophie Maroon", 
     position: "General Practitioner", 
     averageReview: 2, 
     totalReview: 156, 
-    profile: 'doctor_2.jpg',
+    profile: 'assets/doctor_2.jpg',
   ),
   DoctorModel(
     name: "Louise Reid", 
     position: "General Practitioner", 
     averageReview: 3, 
     totalReview: 222, 
-    profile: 'doctor_3.jpg',
+    profile: 'assets/doctor_3.jpg',
   ),
 ];

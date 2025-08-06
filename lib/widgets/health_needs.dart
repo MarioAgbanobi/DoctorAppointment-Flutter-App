@@ -7,10 +7,10 @@ const HealthNeeds({ super.key });
   Widget build(BuildContext context){
     
   List<CustomIcon> customIcons = [
-    CustomIcon(icon: "appointment.png", name: "Appointment"),
-    CustomIcon(icon: "hospital.png", name: "Hospital"),
-    CustomIcon(icon: "virus.png", name: "Covid-19"),
-    CustomIcon(icon: "more.png", name: "More"),
+    CustomIcon(icon: "assets/appointment.png", name: "Appointment"),
+    CustomIcon(icon: "assets/hospital.png", name: "Hospital"),
+    CustomIcon(icon: "assets/virus.png", name: "Covid-19"),
+    CustomIcon(icon: "assets/more.png", name: "More"),
   ];
 
     return Row(
