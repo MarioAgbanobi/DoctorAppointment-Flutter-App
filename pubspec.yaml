@@ -67,6 +67,9 @@ flutter:
     - assets/doctor_2.jpg
     - assets/doctor_3.jpg
     - assets/appointment.png
+    - assets/hospital.png
+    - assets/virus.png
+    - assets/more.png
     - assets/blood.png
     - assets/drug.png
     - assets/health_care.png
