@@ -21,7 +21,7 @@ const UpcomingCard({super.key});
         children: [
           ClipRRect(borderRadius: BorderRadius.circular(10),
           child: Image.asset(
-            "doctor_2.jpg",
+            "assets/doctor_2.jpg",
             width: 45,
             )
           ),
