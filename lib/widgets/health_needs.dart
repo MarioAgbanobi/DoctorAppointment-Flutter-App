@@ -18,15 +18,32 @@ const HealthNeeds({ super.key });
       children: List.generate(customIcons.length, (index) {
         return Column(
           children: [
-            Container(
-              width: 60,
-              height: 60,
-              padding: const EdgeInsets.all(15),
-              decoration: BoxDecoration(
-                shape: BoxShape.circle,
-                color: Theme.of(context).colorScheme.primaryContainer.withOpacity(0.4)
+            InkWell(
+              onTap: () {
+                if (index == customIcons.length - 1){
+                  showModalBottomSheet(context: context,
+                  backgroundColor: Colors.white,
+                  showDragHandle: true,
+                  builder: (context) {
+                    return Container(
+                      width: double.infinity,
+                      padding: const EdgeInsets.all(20),
+                      height: 350,
+                    ); 
+                  },);
+                }
+              },
+              borderRadius: BorderRadius.circular(90),
+              child: Container(
+                width: 60,
+                height: 60,
+                padding: const EdgeInsets.all(15),
+                decoration: BoxDecoration(
+                  shape: BoxShape.circle,
+                  color: Theme.of(context).colorScheme.primaryContainer.withOpacity(0.4)
+                ),
+                child: Image.asset(customIcons[index].icon),
               ),
-              child: Image.asset(customIcons[index].icon),
             ),
             const SizedBox(height: 6),
             Text(customIcons[index].name)
