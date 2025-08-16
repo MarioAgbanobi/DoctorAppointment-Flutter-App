@@ -69,7 +69,12 @@ flutter:
     - assets/appointment.png
     - assets/hospital.png
     - assets/virus.png
+    - assets/drug.png
     - assets/more.png
+    - assets/blood.png
+    - assets/health_care.png
+    - assets/tooth.png
+    - assets/insurance.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
