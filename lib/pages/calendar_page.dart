@@ -1,3 +1,4 @@
+import 'package:doctor_app/widgets/appointment_card.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -36,7 +37,7 @@ class _CalendarPageState extends State<CalendarPage> {
         children: [
           // Segmented controllers 
           CupertinoSlidingSegmentedControl(
-            padding: const EdgeInsets.all(16),
+            padding: const EdgeInsets.all(5),
             groupValue: activeIndex,
             children: const {
             0: Text("Upcoming"),
@@ -46,8 +47,13 @@ class _CalendarPageState extends State<CalendarPage> {
               setState(() {
                 activeIndex = value!;
               });
-            })
+            }),
+
+            const SizedBox(height: 25),
+
+            const AppointmentCard(),
         ],
+
       ),
     );
   }
